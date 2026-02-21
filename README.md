@@ -142,10 +142,26 @@ Cent 欢迎所有开发者与用户参与贡献，提交代码前请参考[贡�
 
 > QQ交流群：861180883
 
+### 快速开始
+
+项目提供了自动化脚本来简化环境搭建和启动过程：
+
 ```bash
 # 克隆项目
 git clone https://github.com/glink25/Cent.git
+cd Cent
 
+# 方式一：使用自动化脚本（推荐）
+# 1. 运行环境搭建脚本（自动安装 Node.js 22、pnpm 和依赖）
+./setup.sh
+
+# 2. 重新加载终端配置（如果是第一次使用 fnm）
+source ~/.bashrc
+
+# 3. 启动开发服务器
+./start.sh
+
+# 方式二：手动安装
 # 安装依赖
 pnpm install
 
